@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Navigation Bar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #222; /* Dark background */
+    background-color: #222; 
     color: white;
 }
 
@@ -18,10 +18,10 @@ body {
 }
 
 .logo-icon {
-    /* Placeholder for the plane icon, you can replace with an image or SVG */
+    
     font-size: 1.5rem;
     margin-right: 0.5rem;
-    transform: rotate(-45deg); /* Rotate like the plane in the image */
+    transform: rotate(-45deg); 
 }
 
 .brand-name {
@@ -46,12 +46,17 @@ body {
     font-weight: bold;
 }
 
+.content-container {
+    position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; width: 100%;
+    
+}
+
 .search-container {
     display: flex;
     align-items: center;
     background-color: white;
     padding: 0.5rem;
-    border-radius: 25px; /* Rounded corners */
+    border-radius: 25px;
 }
 
 .search-input {
@@ -62,7 +67,7 @@ body {
 }
 
 .search-icon {
-    /* Placeholder for search icon */
+    
     color: #555;
     margin: 0 0.5rem;
     font-size: 1.2rem;
@@ -78,13 +83,38 @@ body {
 }
 
 .btn-search {
-    background-color: #008080; /* Teal color */
+    background-color: #008080; 
     color: white;
 }
 
 .btn-clear {
-    background-color: #008080; /* Teal color */
+    background-color: #008080; 
     color: white;
+}
+.search-results-area {
+    flex: 0 0 450px; 
+    display: flex; flex-direction: column; gap: 10px;
+    max-height: 80vh; overflow-y: auto; 
+    padding-right: 10px;
+}
+.result-card {
+    background-color: white; border-radius: 10px; overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); color: #333;
+    animation: fadeIn 0.5s ease-in;
+    margin-bottom: 10px;
+}
+.result-img { width: 100%; height: 200px; object-fit: cover;  }
+.result-body { padding: 15px;  border-top: none; }
+.result-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 5px; color: #000; }
+.result-desc { font-size: 0.9rem; color: #666; margin-bottom: 15px; line-height: 1.4; }
+.btn-visit {
+    background-color: #008080; color: white; border: none; padding: 8px 20px;
+    border-radius: 5px; font-weight: bold; cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 
@@ -100,13 +130,14 @@ body {
     align-items: center;
 }
 
+
 .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .hero-content {
@@ -117,25 +148,6 @@ body {
     max-width: 800px;
 }
 
-/* Social Icons */
-.social-icons {
-    position: absolute;
-    left: 2rem;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-}
-
-.social-icon {
-    /* Placeholder for social media icons */
-    color: white;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    text-decoration: none;
-}
-
-/* Hero Text */
 .hero-title {
     font-size: 4rem;
     font-weight: bold;
@@ -156,14 +168,13 @@ body {
 }
 
 .btn-book {
-    background-color: #008080; /* Teal color */
+    background-color: #008080; 
     color: white;
     padding: 1rem 2rem;
     font-size: 1.2rem;
     border-radius: 5px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -247,7 +258,7 @@ body {
 }
 
 .btn-role {
-    background-color: #1a237e; /* Dark blue */
+    background-color: #1a237e; 
     color: white;
     padding: 0.5rem 1.5rem;
     border: none;
@@ -262,7 +273,7 @@ body {
         .team-icon { font-size: 3rem; margin-bottom: 1rem; color: #aaa; }
         .btn-role { background-color: #1a237e; color: white; padding: 0.5rem 1.5rem; border: none; border-radius: 5px; cursor: pointer; }
 
-        /* CONTACT US Specific Styles */
+        
         .contact-layout {
             display: flex;
             justify-content: space-between;
@@ -327,7 +338,7 @@ body {
 
         .btn-submit {
             width: 100%;
-            background-color: #008080; /* Teal */
+            background-color: #008080; 
             color: white;
             padding: 10px;
             border: none;
