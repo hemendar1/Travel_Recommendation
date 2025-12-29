@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <span class="logo-icon">✈️</span> <span class="brand-name">TravelBloom</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#sectionHome">Home</a></li>
+            <li><a href="#sectionaboutus">About Us</a></li>
+            <li><a href="#sectioncontactus">Contact Us</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Enter a destination or keyword">
+            <span class="search-icon">🔍</span> <button class="btn btn-search">Search</button>
+            <button class="btn btn-clear">Clear</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="sectionHome" class="section-bg">
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title">EXPLORE<br>DREAM<br>DESTINATION</h1>
+                <div class="red-border-box">
+                    <p class="hero-description">
+                        It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
+                    </p>
+                </div>
+                <button class="btn btn-book">BOOK NOW</button>
+            </div>
+        </section>
+
+        <section id="sectionaboutus" class="section-bg">
+            <div class="overlay"></div>
+            
+            <div class="content-container">
+                <h1 class="about-title">ABOUT US</h1>
+                <div class="red-border-box about-description">
+                    <p>
+                        Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to <span class="bold-text">provide the best experience</span> for people traveling to different destinations around the world.
+                        <br><br>
+                        Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in <span class="bold-text">putting our customers first</span> and <span class="bold-text">working together</span> to achieve our goals.
+                        <br><br>
+                        Feel free to explore our website to learn more about what we offer!
+                    </p>
+                </div>
+
+                <div class="red-border-box team-section">
+                    <h2 class="team-title">Our<br>Team</h2>
+                    <div class="team-cards">
+                        <div class="team-card">
+                            <div class="team-icon">👤</div>
+                            <h3 class="team-name">Ram</h3>
+                            <p class="team-info">Ram is responsible for...</p>
+                            <button class="btn-role">CEO</button>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-icon">👤</div>
+                            <h3 class="team-name">Gowtham</h3>
+                            <p class="team-info">Gowtham is responsible for...</p>
+                            <button class="btn-role">Team Lead</button>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-icon">👤</div>
+                            <h3 class="team-name">Tyson</h3>
+                            <p class="team-info">Tyson is responsible for...</p>
+                            <button class="btn-role">Delivery Head</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sectioncontactus" class="section-bg">
+            <div class="overlay"></div>
+            
+            <div class="content-container contact-layout">
+                <div class="contact-left">
+                    <h1 class="contact-title">CONTACT US</h1>
+                    <p class="contact-subtext">Get in touch...</p>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-input" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-input" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-textarea" placeholder="Write your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
